@@ -1,0 +1,35 @@
+page-lists {
+    ion-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        ion-item{
+            .item-inner{
+                border-bottom: none;
+            }
+
+            .input-wrapper{
+                text-align: center;
+            }
+
+            &.item-block{
+                width: calc(50vw - 24px);
+                height: calc(50vw - 24px);
+                border: none !important;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                margin-bottom: 16px;
+            }
+
+            &.selected-item{
+                background-color: #DDD;
+                box-shadow: 0 3px 15px rgba(0,0,0,0.6);
+                transition: background-color 0.3s ease-out;
+            }
+
+        }
+    }
+    button[fab]{
+        z-index: 10;
+    }
+}

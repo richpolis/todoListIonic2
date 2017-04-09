@@ -1,0 +1,29 @@
+page-todos {
+    .warning{
+        color: red;
+    }
+
+    button[ion-fab]{
+        z-index: 10;
+    }
+
+    h3:first-child{
+        margin-top: 20px;
+    }
+
+    ion-list{
+        .item-divider-ios{
+            background-color: white;
+            color: map-get($colors, secundary )
+        }
+
+        .no-todos{
+            border: none;
+            color: map-get($colors, light );
+            font-style: italic;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.3em;
+        }
+    }
+}
